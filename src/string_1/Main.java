@@ -7,19 +7,16 @@ public class Main {
 
     public static int solution(String a, String b) {
 
-        List<String> sInput = new ArrayList<>();
-        String target = b.toLowerCase();
+        a = a.toUpperCase();
+        b = b.toUpperCase();
         int answer = 0;
 
         for (char c : a.toCharArray()) {
-            sInput.add(String.valueOf(c).toLowerCase());
-        }
-
-        for (String s : sInput) {
-            if (s.equals(target)) {
+            if (c == b.charAt(0)) {
                 answer++;
             }
         }
+
         return answer;
     }
 
