@@ -24,6 +24,11 @@ public class Answer2 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        String s = "";
+        s += (char) 49;
+
+        System.out.println("s = " + s);
+
         int solution = main.solution(br.readLine());
         System.out.println("solution = " + solution);
     }
